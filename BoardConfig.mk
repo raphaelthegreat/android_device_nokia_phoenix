@@ -62,6 +62,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno616
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-05-01
 
