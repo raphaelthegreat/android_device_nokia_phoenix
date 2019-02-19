@@ -142,6 +142,7 @@ VENDOR_SECURITY_PATCH := 2021-05-01
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := false
