@@ -1,5 +1,6 @@
 # /proc/bandinfo - Radio
-genfscon proc /bandinfo            u:object_r:proc_bandinfo:s0
+genfscon proc /bandinfo             u:object_r:proc_bandinfo:s0
+genfscon proc /baseband             u:object_r:proc_fih:s0
 
 # /proc/AllHWLis/* - Gestures
 genfscon proc /AllHWList/tp_double_tap   u:object_r:proc_fih:s0
