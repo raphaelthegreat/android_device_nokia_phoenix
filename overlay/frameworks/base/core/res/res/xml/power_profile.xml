@@ -64,7 +64,7 @@
         <value>1300</value>
         <value>1400</value>
     </array>
-    <item name="cpu.awake">1.6</item>
-    <item name="cpu.idle">0.1</item>
+    <item name="cpu.idle">1.6</item>
+    <item name="cpu.suspend">0.1</item>
     <item name="battery.capacity">1000</item>
 </device>
