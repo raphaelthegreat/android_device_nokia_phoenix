@@ -14,7 +14,6 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vbmeta \
     vendor
 
 # Architecture
@@ -136,7 +135,7 @@ VENDOR_SECURITY_PATCH := 2021-05-01
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 # Verified Boot
-BOARD_AVB_ENABLE := true
+BOARD_AVB_ENABLE := false
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # WiFi
