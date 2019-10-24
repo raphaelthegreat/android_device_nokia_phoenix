@@ -63,6 +63,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno616
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
