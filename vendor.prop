@@ -152,6 +152,9 @@ qemu.hw.mainkeys=0
 # Netflix
 ro.netflix.bsp_rev=Q845-05000-1
 
+# Network manager
+persist.vendor.data.iwlan.enable=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
