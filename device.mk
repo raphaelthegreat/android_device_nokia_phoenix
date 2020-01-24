@@ -431,6 +431,11 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     librmnetctl
 
+# Charger images
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
