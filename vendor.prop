@@ -170,6 +170,7 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.radio.multisim.config=dsds
 persist.vendor.radio.rat_on=combine
+ro.telephony.default_network=33,33
 
 # USB
 vendor.usb.diag.func.name=diag
