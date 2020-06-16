@@ -7,3 +7,6 @@ persist.camera.            u:object_r:camera_prop:s0
 vendor.gxfp.                    u:object_r:vendor_fp_prop:s0
 vendor.egfp.version             u:object_r:vendor_fp_prop:s0
 vendor.fp.firmware.version      u:object_r:vendor_fp_prop:s0
+
+# Power
+vendor.powerhal.                u:object_r:vendor_power_prop:s0

@@ -1,1 +1,5 @@
+# Fingerprint
 type vendor_fp_prop, property_type;
+
+# Power
+type vendor_power_prop, property_type;
