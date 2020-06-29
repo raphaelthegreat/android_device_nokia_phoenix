@@ -1694,30 +1694,6 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# Touch Improve
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-
-# Touchscreen
-vendor/bin/hbtp_daemon
-vendor/etc/hbtp/hbtpcfg.dat
-vendor/etc/hbtp/hbtpcfg_sdm710_800h_qhd.dat
-vendor/etc/hbtp/hbtpcfg_sdm710_800s_fhd.dat
-vendor/etc/hbtp/hbtpcfg_sdm710_801s_2k.dat
-vendor/etc/hbtp/hbtpcfg_sdm710_801s_qhd.dat
-vendor/etc/hbtp/loader.cfg
-vendor/etc/hbtp/qtc800h.bin
-vendor/etc/hbtp/qtc800s_dsp.bin
-vendor/etc/hbtp/qtc801s.bin
-vendor/lib/libhbtpclient.so
-vendor/lib/libhbtpdsp.so
-vendor/lib/libhbtpfrmwk.so
-vendor/lib64/libhbtpclient.so
-vendor/lib64/libhbtpdsp.so
-vendor/lib64/libhbtpfrmwk.so
-
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
