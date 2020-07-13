@@ -5,7 +5,6 @@
 #
 
 DEVICE_PATH := device/nokia/PNX_sprout
-BOARD_VENDOR := nokia
 
 # A/B
 AB_OTA_UPDATER := true
