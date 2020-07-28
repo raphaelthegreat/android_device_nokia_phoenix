@@ -102,6 +102,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
+PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.6 \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.6
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
