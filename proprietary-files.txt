@@ -1168,12 +1168,6 @@ vendor/lib64/libssd.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
-# Qdutils
-system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-
 # Radio
 -system_ext/app/atfwd/atfwd.apk
 -system_ext/app/datastatusnotification/datastatusnotification.apk
