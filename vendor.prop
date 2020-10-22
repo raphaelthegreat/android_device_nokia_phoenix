@@ -106,6 +106,9 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.allow_encrypt_override=true
 ro.crypto.set_dun=true
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 ro.vendor.display.cabl=2
 debug.sf.hw=0
