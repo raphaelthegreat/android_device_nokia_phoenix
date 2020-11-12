@@ -142,6 +142,7 @@ VENDOR_SECURITY_PATCH := 2021-05-01
 
 # SELinux
 include device/qcom-LA.UM.10.3.r1-xxxxx-sdm845.0/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Verified Boot
