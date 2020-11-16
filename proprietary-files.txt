@@ -2121,7 +2121,6 @@ vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/bin/vendor_cmd_tool
 vendor/bin/wdsdaemon
-vendor/etc/excluded-input-devices.xml
 vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
 vendor/etc/init/vendor_flash_recovery.rc
