@@ -486,6 +486,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     WifiOverlay \
     TetheringConfigOverlay \
+    netutils-wrapper-1.0 \
     wpa_supplicant \
     wpa_supplicant.conf \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
