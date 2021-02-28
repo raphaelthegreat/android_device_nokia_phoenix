@@ -2135,7 +2135,6 @@ vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
 vendor/etc/init/vendor_flash_recovery.rc
 vendor/lib/carwatchdog_aidl_interface-V2-ndk_platform.so
-vendor/lib/libavservices_minijail.so
 vendor/lib/libboot_control_qti.so
 vendor/lib/libcvimage_api.so
 vendor/lib/libjnihelper.so
@@ -2145,7 +2144,6 @@ vendor/lib/libvorbisidec.so
 vendor/lib/libvpx.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib64/carwatchdog_aidl_interface-V2-ndk_platform.so
-vendor/lib64/libavservices_minijail.so
 vendor/lib64/libboot_control_qti.so
 vendor/lib64/libcvimage_api.so
 vendor/lib64/libjnihelper.so
