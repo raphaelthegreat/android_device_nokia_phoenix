@@ -5,6 +5,7 @@ system_ext/lib/libadsprpc_system.so
 system_ext/lib64/libadsprpc_system.so
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libmdsprpc.so
@@ -1205,6 +1206,7 @@ system_ext/lib64/libqmi_cci_system.so
 system_ext/lib64/libqmi_encdec_system.so
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
+vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
@@ -1336,6 +1338,7 @@ vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
+vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/lib/libconfigdb.so
@@ -1924,6 +1927,8 @@ vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/wfdvndservice.rc
+vendor/etc/seccomp_policy/wfdhdcphalservice.policy
+vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
 vendor/etc/wfdconfig.xml
 vendor/lib/libFileMux_proprietary.so
