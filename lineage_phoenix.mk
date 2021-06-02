@@ -10,7 +10,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_NAME := lineage_phoenix
-PRODUCT_DEVICE := PNX_sprout
+PRODUCT_DEVICE := phoenix
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
 PRODUCT_MODEL := Nokia 8.1
