@@ -515,6 +515,14 @@ vendor/lib64/libcryptfshwcommon.so
 vendor/lib64/libcryptfshwhidl.so
 vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so
 
+# Display (HWC)
+vendor/lib/libdisplayconfig.qti.so
+vendor/lib/libsdmcore.so
+vendor/lib/libsdmutils.so
+vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmutils.so
+
 # DPM
 -framework/tcmclient.jar
 system_ext/bin/dpmd

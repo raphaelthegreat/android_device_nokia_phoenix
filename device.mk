@@ -141,7 +141,6 @@ PRODUCT_PACKAGES += \
     gralloc.sdm710 \
     hwcomposer.sdm710 \
     memtrack.sdm710 \
-    libdisplayconfig.qti \
     libgralloc.qti \
     libqdMetaData \
     libtinyxml \
