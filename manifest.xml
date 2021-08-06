@@ -364,36 +364,6 @@
         <fqname>@2.0::IBiometricsFingerprintEts/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.fih.hardware.box</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBox</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBox/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.fih.hardware.ifaa</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IIfaa</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IIfaa/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.fih.hardware.stabilityDebugCtl</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IstabilityDebugCtl</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IstabilityDebugCtl/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.goodix.hardware.fingerprint</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
