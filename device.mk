@@ -127,6 +127,69 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fqcaudioloopback_pnx.sh \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.pnx.lcm.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.qcv.sh \
+    init.sensor.e2pwrite.sh \
+    qca6234-service.sh \
+    android.hardware.nfc@1.2-service.sec.rc \
+    init.fih.ramdump.rc \
+    init.fingerprint.et520.rc \
+    init.fingerprint.gf3258.rc \
+    init.msm.usb.configfs.rc \
+    init.nfc.sec.rc \
+    init.pnx.audio.rc \
+    init.pnx.chromatix.rc \
+    init.pnx.elabel.rc \
+    init.pnx.lcm.rc \
+    init.pnx.sensor.rc \
+    init.pnx.target.rc \
+    init.pnx.touch.rc \
+    init.qcom.emmc.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.target.rc \
+    init.qcom.usb.rc \
+    init.qti.ufs.rc \
+    init.sku.600E0.PNX.rc \
+    init.sku.600E0.PNXI.rc \
+    init.sku.600E0.PNXR.1.rc \
+    init.sku.600E0.PNXR.2.rc \
+    init.sku.600E0.rc \
+    init.sku.600ID.PNX.rc \
+    init.sku.600ID.PNXI.rc \
+    init.sku.600ID.PNXR.1.rc \
+    init.sku.600ID.PNXR.2.rc \
+    init.sku.600ID.rc \
+    init.sku.600RU.PNX.rc \
+    init.sku.600RU.PNXI.rc \
+    init.sku.600RU.PNXR.1.rc \
+    init.sku.600RU.PNXR.2.rc \
+    init.sku.600RU.rc \
+    init.sku.600WW.PNX.rc \
+    init.sku.600WW.PNXI.rc \
+    init.sku.600WW.PNXR.1.rc \
+    init.sku.600WW.PNXR.2.rc \
+    init.sku.600WW.rc \
+    init.sku.rc \
+    init.target.rc \
+    fstab.qcom \
+    ueventd.qcom.rc \
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
