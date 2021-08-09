@@ -25,18 +25,16 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.sdm710.recovery
+
+PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
     bootctrl.sdm710
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.sdm710 \
-    libcutils \
-    libgptutils \
-    libz
 
 # IDC
 PRODUCT_COPY_FILES += \
