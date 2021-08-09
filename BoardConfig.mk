@@ -43,6 +43,7 @@ TARGET_KERNEL_SOURCE := kernel/nokia/sdm710
 TARGET_KERNEL_CONFIG := pnx-perf_defconfig
 
 # HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Platform
