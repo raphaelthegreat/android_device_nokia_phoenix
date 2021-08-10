@@ -15,7 +15,7 @@ vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
-# ADSP-Modules
+# ADSP (Modules)
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -31,8 +31,10 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# ANT
+# ANT+
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib/com.dsi.ant@1.0.so
@@ -138,7 +140,9 @@ vendor/lib64/libbtnv.so
 
 # Bluetooth (A2DP)
 system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+system_ext/lib/libbluetooth_qti.so
 system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
+system_ext/lib64/libbluetooth_qti.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
@@ -146,6 +150,7 @@ vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
+vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
@@ -157,6 +162,7 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
+vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
@@ -895,12 +901,14 @@ vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
 
 # Media
+system_ext/lib/extractors/libmmparserextractor.so
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib/libmmrtpdecoder.so
 system_ext/lib/libmmrtpencoder.so
 system_ext/lib/vendor.qti.hardware.vpp@1.1.so
 system_ext/lib/vendor.qti.hardware.vpp@1.2.so
+system_ext/lib64/extractors/libmmparserextractor.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/libmmrtpdecoder.so
@@ -1891,11 +1899,8 @@ system_ext/etc/spn-conf.xml
 -system_ext/framework/uimremotesimlocklibrary.jar
 -system_ext/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar
-system_ext/lib/android.hidl.base@1.0.so
-system_ext/lib/extractors/libmmparserextractor.so
 system_ext/lib/libadsprpc_system.so
 system_ext/lib/libavenhancements.so
-system_ext/lib/libbluetooth_qti.so
 system_ext/lib/libbt-logClient.so
 system_ext/lib/libbtconfigstore.so
 system_ext/lib/libcdsprpc_system.so
@@ -1914,7 +1919,6 @@ system_ext/lib/libqcc.so
 system_ext/lib/libqcc_file_agent_sys.so
 system_ext/lib/libqcomfm_jni.so
 system_ext/lib/libqct_resampler.so
-system_ext/lib/libqdMetaData.so
 system_ext/lib/libqmi_cci_system.so
 system_ext/lib/libqmi_encdec_system.so
 system_ext/lib/libQSEEComAPI_system.so
@@ -1955,11 +1959,8 @@ system_ext/lib/vendor.qti.hardware.secureprocessor.device@1.0.so
 system_ext/lib/vendor.qti.hardware.slmadapter@1.0.so
 system_ext/lib/vendor.qti.hardware.systemhelper@1.0.so
 system_ext/lib/vendor.qti.qspmhal@1.0.so
-system_ext/lib64/android.hidl.base@1.0.so
-system_ext/lib64/extractors/libmmparserextractor.so
 system_ext/lib64/libadsprpc_system.so
 system_ext/lib64/libavenhancements.so
-system_ext/lib64/libbluetooth_qti.so
 system_ext/lib64/libbt-logClient.so
 system_ext/lib64/libbtconfigstore.so
 system_ext/lib64/libcdsprpc_system.so
@@ -1985,7 +1986,6 @@ system_ext/lib64/liboemaids_system.so
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
 system_ext/lib64/libqcomfm_jni.so
-system_ext/lib64/libqdMetaData.so
 system_ext/lib64/libqmi_cci_system.so
 system_ext/lib64/libqmi_encdec_system.so
 system_ext/lib64/libQSEEComAPI_system.so
@@ -2107,20 +2107,6 @@ vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/configstore/wigig.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/excluded-input-devices.xml
-vendor/etc/fqc_PNX.xml
-vendor/etc/fqc_PNXI_0.xml
-vendor/etc/fqc_PNXI_1.xml
-vendor/etc/fqc_PNXI_2.xml
-vendor/etc/fqc_PNXR_0.xml
-vendor/etc/fqc_PNXR_1.xml
-vendor/etc/fqc_PNXR_2.xml
-vendor/etc/fqc_PNX_0.xml
-vendor/etc/fqc_PNX_1.xml
-vendor/etc/fqc_PNX_2.xml
-vendor/etc/fqc_touch_len.jpg
-vendor/etc/ftm_test_config_sdm710-skuw-snd-card
-vendor/etc/ftm_test_config_sdm710-tasha-snd-card
-vendor/etc/ftm_test_config_sdm710-tavil-snd-card
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/hostapd/hostapd.accept
@@ -2170,18 +2156,14 @@ vendor/etc/PNX_SPKR_1kHz_-6p3dB.wav
 vendor/etc/PNX_SPKR_sweep_-6p3dB.wav
 vendor/etc/sec_s3nrn81_rfreg.bin
 vendor/etc/silence_48k-samplerate.wav
-vendor/etc/SKUID_Info.xml
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
-vendor/lib/btaudio_offload_if.so
 vendor/lib/carwatchdog_aidl_interface-V2-ndk_platform.so
 vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib/lib-rcsconfig.so
-vendor/lib/liba2dpoffload.so
 vendor/lib/libavservices_minijail.so
-vendor/lib/libbatterylistener.so
 vendor/lib/libboot_control_qti.so
 vendor/lib/libcacertclient.so
 vendor/lib/libcdfw.so
@@ -2196,11 +2178,6 @@ vendor/lib/libexthwplugin.so
 vendor/lib/libfastcrc.so
 vendor/lib/libFileMux_proprietary.so
 vendor/lib/libgpudataproducer.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
-vendor/lib/libhidltransport.so
-vendor/lib/libhwbinder.so
 vendor/lib/libjnihelper.so
 vendor/lib/libmegface-new.so
 vendor/lib/libMGBeauty.so
@@ -2219,16 +2196,12 @@ vendor/lib/libqcbor.so
 vendor/lib/libqcc_file_agent.so
 vendor/lib/libqcrildatactl.so
 vendor/lib/libqti_vndfwk_detect.so
-vendor/lib/librecovery_updater.so
 vendor/lib/libril-qc-logger.so
 vendor/lib/libsmemlog.so
-vendor/lib/libsndmonitor.so
 vendor/lib/libsns_registry_skel.so
 vendor/lib/libsoc_helper.so
 vendor/lib/libsoc_helper_jni.so
 vendor/lib/libspeexresamplercust.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_enc_common.so
 vendor/lib/libstagefright_flacdec.so
@@ -2258,7 +2231,6 @@ vendor/lib/libstagefright_soft_rawdec.so
 vendor/lib/libstagefright_soft_vorbisdec.so
 vendor/lib/libstagefright_soft_vpxdec.so
 vendor/lib/libstagefright_soft_vpxenc.so
-vendor/lib/libsynergy_loc_api.so
 vendor/lib/libteeclientjni.so
 vendor/lib/libtrustedapploader.so
 vendor/lib/libVkLayer_q3dtools.so
@@ -2283,16 +2255,13 @@ vendor/lib/vendor.qti.hardware.servicetracker@1.0.so
 vendor/lib/vendor.qti.hardware.servicetracker@1.1.so
 vendor/lib/vendor.qti.hardware.servicetracker@1.2.so
 vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
-vendor/lib64/btaudio_offload_if.so
 vendor/lib64/carwatchdog_aidl_interface-V2-ndk_platform.so
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib64/lib-rcsconfig.so
-vendor/lib64/liba2dpoffload.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libavservices_minijail.so
-vendor/lib64/libbatterylistener.so
 vendor/lib64/libboot_control_qti.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcdfw.so
@@ -2308,11 +2277,6 @@ vendor/lib64/libets_teeclient.so
 vendor/lib64/libexthwplugin.so
 vendor/lib64/libgameoptfeature.so
 vendor/lib64/libgpudataproducer.so
-vendor/lib64/libhdmiedid.so
-vendor/lib64/libhdmipassthru.so
-vendor/lib64/libhfp.so
-vendor/lib64/libhidltransport.so
-vendor/lib64/libhwbinder.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmorpho_hdr_checker.so
@@ -2325,18 +2289,13 @@ vendor/lib64/libqcbor.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqti_vndfwk_detect.so
-vendor/lib64/librecovery_updater.so
 vendor/lib64/libreffeature.so
 vendor/lib64/libril-qc-logger.so
 vendor/lib64/libsmemlog.so
-vendor/lib64/libsndmonitor.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
-vendor/lib64/libspkrprot.so
-vendor/lib64/libssrec.so
 vendor/lib64/libstagefright_softomx.so
-vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libVkLayer_q3dtools.so
@@ -2347,8 +2306,6 @@ vendor/lib64/libwigig_pciaccess.so
 vendor/lib64/libwigig_utils.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so

@@ -36,7 +36,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
+    libbatterylistener \
     libhdmiedid \
+    libhdmipassthru \
     libhfp \
     libsndmonitor \
     libspkrprot \
