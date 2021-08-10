@@ -113,6 +113,26 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6 \
     vendor.qti.hardware.camera.device@1.0
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.graphics.mapper@2.0-impl-qti-display \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    gralloc.sdm710 \
+    hwcomposer.sdm710 \
+    memtrack.sdm710 \
+    libdisplayconfig.qti \
+    libgralloc.qti \
+    libqdMetaData \
+    libtinyxml \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0 \
+    vendor.qti.hardware.display.allocator@1.0-service \
+    vendor.qti.hardware.display.composer@3.0.vendor \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
