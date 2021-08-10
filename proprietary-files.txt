@@ -840,12 +840,6 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# IFAA
-vendor/bin/hw/vendor.fih.hardware.ifaa@1.0-service
-vendor/etc/init/vendor.fih.hardware.ifaa@1.0-service.rc
-vendor/lib/vendor.fih.hardware.ifaa@1.0.so
-vendor/lib64/vendor.fih.hardware.ifaa@1.0.so
-
 # IPA-Firmware
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
@@ -2071,7 +2065,6 @@ vendor/bin/hal_proxy_daemon
 vendor/bin/hbtp_daemon
 vendor/bin/host_manager_11ad
 vendor/bin/hw/capabilityconfigstoretest
-vendor/bin/hw/vendor.fih.hardware.iface@1.0-service
 vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
@@ -2102,7 +2095,6 @@ vendor/bin/StoreKeybox
 vendor/bin/test_diag
 vendor/bin/tinymix2
 vendor/bin/tloc_daemon
-vendor/bin/vendor.fih.hardware.stabilityDebugCtl@1.0-service
 vendor/bin/vendor_cmd_tool
 vendor/bin/vppservice
 vendor/bin/wdsdaemon
@@ -2156,8 +2148,6 @@ vendor/etc/init/port-bridge.rc
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/tloc_daemon.rc
-vendor/etc/init/vendor.fih.hardware.iface@1.0-service.rc
-vendor/etc/init/vendor.fih.hardware.stabilityDebugCtl@1.0-service.rc
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
 vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
@@ -2281,8 +2271,6 @@ vendor/lib/libwigig_pciaccess.so
 vendor/lib/libwigig_utils.so
 vendor/lib/qtibus.so
 vendor/lib/qtimutex.so
-vendor/lib/vendor.fih.hardware.stabilityDebugCtl@1.0-impl.so
-vendor/lib/vendor.fih.hardware.stabilityDebugCtl@1.0.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so
@@ -2364,9 +2352,6 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
-vendor/lib64/vendor.fih.hardware.iface@1.0.so
-vendor/lib64/vendor.fih.hardware.stabilityDebugCtl@1.0-impl.so
-vendor/lib64/vendor.fih.hardware.stabilityDebugCtl@1.0.so
 vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so
