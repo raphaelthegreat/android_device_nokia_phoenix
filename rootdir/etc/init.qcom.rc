@@ -386,12 +386,6 @@ on post-fs-data
     chmod 0660 /data/vendor/radio/atl_complete
     #-FIH@R3J168: FEATURE_FIH_C_NOKIA_001 (8998), by Pupu
 
-service nqnfcinfo /system/vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-
 service iop /system/vendor/bin/iop
     class main
     user root

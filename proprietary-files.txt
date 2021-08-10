@@ -976,29 +976,11 @@ vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
-# NFC
-vendor/bin/hw/android.hardware.nfc@1.2-service.sec
-vendor/bin/nqnfcinfo
-vendor/bin/sec_nfc_test
-vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc
-vendor/etc/init/hw/android.hardware.nfc@1.2-service.sec.rc
-vendor/etc/init/hw/init.nfc.sec.rc
-vendor/etc/libnfc-mtp-NQ3XX.conf
-vendor/etc/libnfc-mtp-NQ4XX.conf
-vendor/etc/libnfc-mtp_default.conf
-vendor/etc/libnfc-mtp_rf1.conf
-vendor/etc/libnfc-mtp_rf2.conf
+# NFC (Configs)
 vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-qrd-NQ3XX.conf
-vendor/etc/libnfc-qrd-NQ4XX.conf
-vendor/etc/libnfc-qrd_default.conf
-vendor/etc/libnfc-qrd_rf1.conf
-vendor/etc/libnfc-qrd_rf2.conf
 vendor/etc/libnfc-sec-vendor.conf
-vendor/etc/nfcee_access.xml
-vendor/etc/permissions/com.android.nfc_extras.xml
-vendor/etc/permissions/com.gsma.services.nfc.sec.xml
-vendor/etc/permissions/com.nxp.mifare.xml
+
+# NFC (Firmware)
 vendor/lib/libpn547_fw.so
 vendor/lib/libpn548ad_fw.so
 vendor/lib/libpn551_fw.so

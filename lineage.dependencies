@@ -1,0 +1,6 @@
+[
+    {
+        "repository": "android_hardware_samsung_nfc",
+        "target_path": "hardware/samsung/nfc"
+    }
+]
