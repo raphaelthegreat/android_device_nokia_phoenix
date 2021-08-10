@@ -2148,12 +2148,8 @@ vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/init/wfdvndservice.rc
 vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/ozo_config.xml
 vendor/etc/permissions/vendor.qti.hardware.factory.xml
-vendor/etc/PNX_RCVR_1kHz_-9p8dB.wav
-vendor/etc/PNX_RCVR_sweep_-9p8dB.wav
-vendor/etc/PNX_SPKR_1kHz_-6p3dB.wav
-vendor/etc/PNX_SPKR_sweep_-6p3dB.wav
+
 vendor/etc/sec_s3nrn81_rfreg.bin
 vendor/etc/silence_48k-samplerate.wav
 vendor/etc/ssg/ta_config.json
@@ -2186,8 +2182,6 @@ vendor/lib/libmmrtpencoder_proprietary.so
 vendor/lib/libmorpho_hdr_checker.so
 vendor/lib/libnative-api.so
 vendor/lib/libopus.so
-vendor/lib/libozoaudiodecoder.so
-vendor/lib/libozoaudioencoder.so
 vendor/lib/libperfconfig.so
 vendor/lib/libperfioctl.so
 vendor/lib/libprotobuf-cpp-full-3.9.1.so
@@ -2205,8 +2199,6 @@ vendor/lib/libspeexresamplercust.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_enc_common.so
 vendor/lib/libstagefright_flacdec.so
-vendor/lib/libstagefright_ozodecoder.so
-vendor/lib/libstagefright_ozoencoder.so
 vendor/lib/libstagefright_softomx.so
 vendor/lib/libstagefright_softomx_plugin.so
 vendor/lib/libstagefright_soft_aacdec.so
@@ -2225,8 +2217,6 @@ vendor/lib/libstagefright_soft_mp3dec.so
 vendor/lib/libstagefright_soft_mpeg4dec.so
 vendor/lib/libstagefright_soft_mpeg4enc.so
 vendor/lib/libstagefright_soft_opusdec.so
-vendor/lib/libstagefright_soft_ozodec.so
-vendor/lib/libstagefright_soft_ozoenc.so
 vendor/lib/libstagefright_soft_rawdec.so
 vendor/lib/libstagefright_soft_vorbisdec.so
 vendor/lib/libstagefright_soft_vpxdec.so
