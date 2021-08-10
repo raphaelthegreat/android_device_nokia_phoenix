@@ -680,16 +680,6 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
 etc/firmware/gptauuid.xml
-vendor/firmware/a612_rgmu.bin
-vendor/firmware/a615_zap.b00
-vendor/firmware/a615_zap.b01
-vendor/firmware/a615_zap.b02
-vendor/firmware/a615_zap.elf
-vendor/firmware/a615_zap.mdt
-vendor/firmware/a618_gmu.bin
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
 vendor/firmware/Himax_firmware_CTC.bin
 vendor/firmware/Himax_firmware_Tianma.bin
 vendor/firmware/hx_criteria.csv
@@ -847,6 +837,18 @@ vendor/lib64/librs_adreno.so
 # Graphics (HDR)
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
+
+# Graphics (Firmware)
+vendor/firmware/a612_rgmu.bin
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a618_gmu.bin
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a640_gmu.bin
 
 # Graphics (SDM)
 vendor/lib/libdisplayqos.so
