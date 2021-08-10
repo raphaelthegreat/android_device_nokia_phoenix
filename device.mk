@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     libhfp \
     libsndmonitor \
     libspkrprot \
+    libcirrusspkrprot \
     libssrec
 
 PRODUCT_COPY_FILES += \
@@ -141,6 +142,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
+
+# Framework detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
+    libvndfwk_detect_jni.qti
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -292,6 +298,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.fihtdc.datacollect.xml:system/etc/permissions/com.fihtdc.datacollect.xml \
     $(LOCAL_PATH)/configs/permissions/com.fihtdc.hardware.sensor.hall.xml:system/etc/permissions/com.fihtdc.hardware.sensor.hall.xml \
     $(LOCAL_PATH)/configs/permissions/com.fihtdc.inlifeui.settings.style.android.xml:system/etc/permissions/com.fihtdc.inlifeui.settings.style.android.xml
+
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
