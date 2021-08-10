@@ -340,39 +340,6 @@ vendor/lib/camera/com.qti.tuned.truly_imx363.bin
 vendor/lib/camera/com.qti.tuned.truly_s5k3l6.bin
 vendor/lib/camera/com.qti.tuned.truly_s5k3t1sp.bin
 vendor/lib/camera/com.qti.tuned.truly_s5k3t1sp_ind.bin
-vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so
-vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so
-vendor/lib/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib/camera/components/com.qti.eisv2.so
-vendor/lib/camera/components/com.qti.eisv3.so
-vendor/lib/camera/components/com.qti.hvx.addconstant.so
-vendor/lib/camera/components/com.qti.hvx.binning.so
-vendor/lib/camera/components/com.qti.node.depth.so
-vendor/lib/camera/components/com.qti.node.drchecker.so
-vendor/lib/camera/components/com.qti.node.dummysat.so
-vendor/lib/camera/components/com.qti.node.eisv2.so
-vendor/lib/camera/components/com.qti.node.eisv3.so
-vendor/lib/camera/components/com.qti.node.gpu.so
-vendor/lib/camera/components/com.qti.node.memcpy.so
-vendor/lib/camera/components/com.qti.node.remosaic.so
-vendor/lib/camera/components/com.qti.node.stich.so
-vendor/lib/camera/components/com.qti.node.swregistration.so
-vendor/lib/camera/components/com.qti.stats.aec.so
-vendor/lib/camera/components/com.qti.stats.af.so
-vendor/lib/camera/components/com.qti.stats.afd.so
-vendor/lib/camera/components/com.qti.stats.asd.so
-vendor/lib/camera/components/com.qti.stats.awb.so
-vendor/lib/camera/components/com.qti.stats.awbwrapper.so
-vendor/lib/camera/components/com.qti.stats.pdlib.so
-vendor/lib/camera/components/com.qti.stats.pdlibsony.so
-vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
-vendor/lib/camera/components/com.qtistatic.stats.aec.so
-vendor/lib/camera/components/com.qtistatic.stats.af.so
-vendor/lib/camera/components/com.qtistatic.stats.awb.so
-vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib/camera/components/com.vidhance.node.eis.so
-vendor/lib/camera/components/com.vidhance.stats.aec_dmbr.so
-vendor/lib/camera/components/libdepthmapwrapper.so
 vendor/lib/camera/firmware.camera.liteon_imx363.version.bin
 vendor/lib/camera/firmware.camera.liteon_s5k3l6.version.bin
 vendor/lib/camera/firmware.camera.liteon_s5k3t1sp.version.bin
@@ -427,6 +394,61 @@ vendor/lib64/camera/com.qti.tuned.sunny_s5k2l7.bin
 vendor/lib64/camera/com.qti.tuned.truly_imx363.bin
 vendor/lib64/camera/com.qti.tuned.truly_s5k3l6.bin
 vendor/lib64/camera/com.qti.tuned.truly_s5k3t1sp.bin
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libcamera2ndk_vendor.so
+vendor/lib64/libcamxfdalgov7.so
+vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxtintlessalgo.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2vop.so
+vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsns_fastRPC_util.so
+vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libswregistrationalgo.so
+vendor/lib64/libswvdec.so
+
+# Camera (Arcsoft)
+vendor/lib/libarcsoft_dualcam_refocus.so
+
+# Camera (Components)
+vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so
+vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so
+vendor/lib/camera/components/com.qti.camx.chiiqutils.so
+vendor/lib/camera/components/com.qti.eisv2.so
+vendor/lib/camera/components/com.qti.eisv3.so
+vendor/lib/camera/components/com.qti.hvx.addconstant.so
+vendor/lib/camera/components/com.qti.hvx.binning.so
+vendor/lib/camera/components/com.qti.node.depth.so
+vendor/lib/camera/components/com.qti.node.drchecker.so
+vendor/lib/camera/components/com.qti.node.dummysat.so
+vendor/lib/camera/components/com.qti.node.eisv2.so
+vendor/lib/camera/components/com.qti.node.eisv3.so
+vendor/lib/camera/components/com.qti.node.gpu.so
+vendor/lib/camera/components/com.qti.node.memcpy.so
+vendor/lib/camera/components/com.qti.node.remosaic.so
+vendor/lib/camera/components/com.qti.node.stich.so
+vendor/lib/camera/components/com.qti.node.swregistration.so
+vendor/lib/camera/components/com.qti.stats.aec.so
+vendor/lib/camera/components/com.qti.stats.af.so
+vendor/lib/camera/components/com.qti.stats.afd.so
+vendor/lib/camera/components/com.qti.stats.asd.so
+vendor/lib/camera/components/com.qti.stats.awb.so
+vendor/lib/camera/components/com.qti.stats.awbwrapper.so
+vendor/lib/camera/components/com.qti.stats.pdlib.so
+vendor/lib/camera/components/com.qti.stats.pdlibsony.so
+vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
+vendor/lib/camera/components/com.qtistatic.stats.aec.so
+vendor/lib/camera/components/com.qtistatic.stats.af.so
+vendor/lib/camera/components/com.qtistatic.stats.awb.so
+vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
+vendor/lib/camera/components/com.vidhance.node.eis.so
+vendor/lib/camera/components/com.vidhance.stats.aec_dmbr.so
+vendor/lib/camera/components/libdepthmapwrapper.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.hvx.addconstant.so
 vendor/lib64/camera/components/com.qti.hvx.binning.so
@@ -446,28 +468,8 @@ vendor/lib64/camera/components/com.qtistatic.stats.af.so
 vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/libdepthmapwrapper.so
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libcamxfdalgov7.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libswvdec.so
 
-# Camera-arcsoft
-vendor/lib/libarcsoft_dualcam_refocus.so
-
-# Camera-configs
+# Camera (Configs)
 vendor/etc/camera/arcsoft_calibration.bin
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/license.lic
@@ -475,7 +477,7 @@ vendor/etc/camera/megviifacepp_model
 vendor/etc/camera/mgbeautify_1_2_4_model
 vendor/etc/camera/M_Classify_Cnn_5.3.5.model.hardcode
 
-# Camera-firmware
+# Camera (Firmware)
 vendor/firmware/CAMERA_ICP.elf
 
 # Charger
