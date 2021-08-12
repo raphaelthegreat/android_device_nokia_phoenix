@@ -1830,6 +1830,9 @@ vendor/bin/cnss_diag
 vendor/bin/fstman
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
+vendor/etc/hostapd/hostapd.accept
+vendor/etc/hostapd/hostapd.deny
+vendor/etc/hostapd/hostapd_default.conf
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
@@ -2062,9 +2065,6 @@ vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/excluded-input-devices.xml
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
-vendor/etc/hostapd/hostapd.accept
-vendor/etc/hostapd/hostapd.deny
-vendor/etc/hostapd/hostapd_default.conf
 vendor/etc/init.qti.fm.sh
 vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/dpmQmiMgr.rc
