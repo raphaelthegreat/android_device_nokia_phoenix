@@ -1057,6 +1057,7 @@ vendor/lib/libqti-utils.so
 vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/vendor.qti.hardware.perf@2.1.so
 vendor/lib/vendor.qti.hardware.perf@2.2.so
+vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libgameoptfeature.so
 vendor/lib64/liblearningmodule.so
@@ -1072,6 +1073,7 @@ vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/vendor.qti.hardware.perf@2.1.so
 vendor/lib64/vendor.qti.hardware.perf@2.2.so
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
 
 # Perf-IOP
 system_ext/lib/vendor.qti.hardware.iop@2.0.so
@@ -1819,23 +1821,26 @@ vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 # WiFi
--system_ext/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar
-system_ext/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-system_ext/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so
-system_ext/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
-system_ext/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/bin/fstman
+vendor/bin/wifilearner
+vendor/bin/wigig_wiburn
+vendor/etc/configstore/wigig.xml
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 vendor/etc/hostapd/hostapd.accept
 vendor/etc/hostapd/hostapd.deny
 vendor/etc/hostapd/hostapd_default.conf
-vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib/libwigig_flashaccess.so
+vendor/lib/libwigig_ftm_flows.so
+vendor/lib/libwigig_pciaccess.so
+vendor/lib/libwigig_utils.so
+vendor/lib64/libwigig_flashaccess.so
+vendor/lib64/libwigig_ftm_flows.so
+vendor/lib64/libwigig_pciaccess.so
+vendor/lib64/libwigig_utils.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
 
 # Misc
 -system_ext/app/atfwd/atfwd.apk
@@ -2056,11 +2061,8 @@ vendor/bin/vppservice
 vendor/bin/wdsdaemon
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
-vendor/bin/wifilearner
-vendor/bin/wigig_wiburn
 vendor/bin/wireless_init
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/configstore/wigig.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/excluded-input-devices.xml
 vendor/etc/gnss_antenna_info.conf
@@ -2134,10 +2136,6 @@ vendor/lib/libtrustedapploader.so
 vendor/lib/libVkLayer_q3dtools.so
 vendor/lib/libvorbisidec.so
 vendor/lib/libvpx.so
-vendor/lib/libwigig_flashaccess.so
-vendor/lib/libwigig_ftm_flows.so
-vendor/lib/libwigig_pciaccess.so
-vendor/lib/libwigig_utils.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so
@@ -2182,10 +2180,6 @@ vendor/lib64/libsoc_helper_jni.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libwigig_flashaccess.so
-vendor/lib64/libwigig_ftm_flows.so
-vendor/lib64/libwigig_pciaccess.so
-vendor/lib64/libwigig_utils.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
