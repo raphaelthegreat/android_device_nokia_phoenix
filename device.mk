@@ -37,12 +37,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     liba2dpoffload \
     libbatterylistener \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
     libhdmiedid \
     libhdmipassthru \
     libhfp \
     libsndmonitor \
     libspkrprot \
-    libcirrusspkrprot \
     libssrec
 
 PRODUCT_COPY_FILES += \
