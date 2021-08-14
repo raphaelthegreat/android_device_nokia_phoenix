@@ -147,11 +147,6 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 
 # Bluetooth (A2DP)
-system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-system_ext/lib/libbluetooth_qti.so
-system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-system_ext/lib64/libbluetooth_qti.so
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -163,7 +158,6 @@ vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -2025,13 +2019,10 @@ system_ext/bin/rtspclient
 system_ext/bin/rtspserver
 system_ext/bin/test_diag_system
 system_ext/etc/cdma_call_conf.xml
-system_ext/etc/compatconfig/settings-platform-compat-config.xml
-system_ext/etc/group
 -system_ext/framework/ActivityExt.jar
 -system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar
 system_ext/lib/libavenhancements.so
 system_ext/lib/libbt-logClient.so
-system_ext/lib/libbtconfigstore.so
 system_ext/lib/libjnihelpers.so
 system_ext/lib/liblistenjni.qti.so
 system_ext/lib/liblistensoundmodel2.qti.so
@@ -2041,7 +2032,6 @@ system_ext/lib/libmink-sock-native-api.so
 system_ext/lib/libminksocket_system.so
 system_ext/lib/liboemaids_system.so
 system_ext/lib/libqcc.so
-system_ext/lib/libqcomfm_jni.so
 system_ext/lib/libqct_resampler.so
 system_ext/lib/libsdm-disp-apis.qti.so
 system_ext/lib/libsdsprpc_system.so
@@ -2061,7 +2051,6 @@ system_ext/lib/vendor.qti.hardware.seccam@1.0.so
 system_ext/lib/vendor.qti.qspmhal@1.0.so
 system_ext/lib64/libavenhancements.so
 system_ext/lib64/libbt-logClient.so
-system_ext/lib64/libbtconfigstore.so
 system_ext/lib64/libjnihelpers.so
 system_ext/lib64/liblistenjni.qti.so
 system_ext/lib64/liblistensoundmodel2.qti.so
@@ -2078,7 +2067,6 @@ system_ext/lib64/libmmQSM.so
 system_ext/lib64/libmsp.so
 system_ext/lib64/liboemaids_system.so
 system_ext/lib64/libqcc.so
-system_ext/lib64/libqcomfm_jni.so
 system_ext/lib64/libsdm-disp-apis.qti.so
 system_ext/lib64/libsdsprpc_system.so
 system_ext/lib64/libseccam-ipc.so
