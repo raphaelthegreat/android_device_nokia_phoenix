@@ -42,6 +42,12 @@ on boot
 on fs
     mkdir /vendor/securefs/data 0700 system system
 
+    # Mount chromatix
+    wait /dev/block/bootdevice/by-name/chromatix
+    mount ext4 /dev/block/bootdevice/by-name/chromatix /vendor/chromatix noatime nosuid nodev barrier=1 context=u:object_r:chromatix_file:s0
+    chown system system /vendor/chromatix
+    restorecon_recursive /vendor/chromatix
+
 on post-fs-data
     # Create touch dir
     mkdir /data/vendor/misc/touch 0770 system system
