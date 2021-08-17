@@ -124,7 +124,9 @@ system_ext/lib/vendor.qti.hardware.audiohalext-utils.so
 system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
 system_ext/lib64/vendor.qti.hardware.audiohalext-utils.so
 system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/hw/audio.primary.sdm710.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib64/hw/audio.primary.sdm710.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio (Modules)
