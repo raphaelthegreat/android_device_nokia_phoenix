@@ -144,10 +144,15 @@ PRODUCT_PACKAGES += \
     libgralloc.qti \
     libqdMetaData \
     libtinyxml \
-    vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0 \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor \
+    vendor.display.config@2.0
+    vendor.display.config@2.0.vendor
+
+# Display interfaces
+PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0-service \
-    vendor.qti.hardware.display.composer@3.0.vendor \
+    vendor.qti.hardware.display.composer@3.0 \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor
 
