@@ -4,6 +4,7 @@
 system_ext/lib/libadsprpc_system.so
 system_ext/lib64/libadsprpc_system.so
 vendor/bin/adsprpcd
+vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/libadsprpc.so
@@ -172,7 +173,6 @@ vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/bin/athdiag
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/libbt-hidlclient.so
@@ -252,6 +252,7 @@ vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libcom.qti.chinodeutils.so
+vendor/lib/libcvimage_api.so
 vendor/lib/libmegface-new.so
 vendor/lib/libMegviiFacepp.so
 vendor/lib/libMGBeauty.so
@@ -297,6 +298,7 @@ vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libcvimage_api.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmorpho_hdr_checker.so
 vendor/lib64/libsnsapi.so
@@ -457,6 +459,7 @@ system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so
 -vendor/app/CneApp/CneApp.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
+vendor/bin/mutualex
 vendor/etc/cne/profileSlm.xml
 vendor/etc/cne/slm.conf
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
@@ -722,6 +725,7 @@ system_ext/lib/vendor.qti.hardware.factory@1.1.so
 system_ext/lib64/vendor.qti.hardware.factory@1.0.so
 system_ext/lib64/vendor.qti.hardware.factory@1.1.so
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
+vendor/bin/mmid
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
 vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
@@ -768,6 +772,7 @@ vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/mlid
+vendor/bin/qcc-trd
 vendor/bin/tloc_daemon
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
@@ -793,6 +798,7 @@ vendor/lib/libgnsspps.so
 vendor/lib/libgps.utils.so
 vendor/lib/libizat_client_api.so
 vendor/lib/libizat_core.so
+vendor/lib/libjnihelper.so
 vendor/lib/liblbs_core.so
 vendor/lib/libloc_api_v02.so
 vendor/lib/libloc_core.so
@@ -828,6 +834,7 @@ vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
+vendor/lib64/libjnihelper.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_core.so
@@ -930,6 +937,16 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+
+# IOP
+system_ext/lib/vendor.qti.hardware.iop@2.0.so
+system_ext/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/lib/libqti-iopd-client.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # IPA-Firmware
 vendor/firmware/ipa_fws.b00
@@ -1147,16 +1164,7 @@ vendor/lib64/libadaptlaunch.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libgameoptfeature.so
 vendor/lib64/liblearningmodule.so
-
-# Perf-IOP
-system_ext/lib/vendor.qti.hardware.iop@2.0.so
-system_ext/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/libreffeature.so
 
 # Peripheral
 vendor/bin/pm-proxy
@@ -1177,6 +1185,7 @@ system_ext/lib64/vendor.display.color@1.3.so
 system_ext/lib64/vendor.display.postproc@1.0.so
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/mm-pp-dpps
+vendor/bin/ppd
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
@@ -1350,6 +1359,8 @@ vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
 vendor/bin/qti
+vendor/bin/qtigetprop
+vendor/bin/qtisetprop
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
@@ -1897,6 +1908,38 @@ system_ext/lib64/vendor.qti.voiceprint@1.0.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
+# WiFi
+vendor/bin/athdiag
+vendor/bin/cnss-daemon
+vendor/bin/cnss_diag
+vendor/bin/fstman
+vendor/bin/hal_proxy_daemon
+vendor/bin/pktlogconf
+vendor/bin/spectraltool
+vendor/bin/vendor_cmd_tool
+vendor/bin/wifilearner
+vendor/bin/wigig_wiburn
+vendor/bin/wireless_init
+vendor/etc/configstore/wigig.xml
+vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
+vendor/etc/init/android.hardware.wifi.supplicant-service.rc
+vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
+vendor/etc/hostapd/hostapd.accept
+vendor/etc/hostapd/hostapd.deny
+vendor/etc/hostapd/hostapd_default.conf
+vendor/lib/libwigig_flashaccess.so
+vendor/lib/libwigig_ftm_flows.so
+vendor/lib/libwigig_pciaccess.so
+vendor/lib/libwigig_utils.so
+vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib64/libwigig_flashaccess.so
+vendor/lib64/libwigig_ftm_flows.so
+vendor/lib64/libwigig_pciaccess.so
+vendor/lib64/libwigig_utils.so
+vendor/lib64/vendor.qti.hardware.fstman@1.0.so
+vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
+
 # WiFi Display
 -framework/WfdCommon.jar
 system_ext/bin/sigma_miracasthalservice
@@ -1948,6 +1991,7 @@ system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
 system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 -system_ext/priv-app/WfdService/WfdService.apk
+vendor/bin/sigma_dut
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
@@ -1991,33 +2035,6 @@ vendor/lib64/libwfddisplayconfig_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-
-# WiFi
-vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
-vendor/bin/fstman
-vendor/bin/wifilearner
-vendor/bin/wigig_wiburn
-vendor/bin/wireless_init
-vendor/etc/configstore/wigig.xml
-vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
-vendor/etc/hostapd/hostapd.accept
-vendor/etc/hostapd/hostapd.deny
-vendor/etc/hostapd/hostapd_default.conf
-vendor/lib/libwigig_flashaccess.so
-vendor/lib/libwigig_ftm_flows.so
-vendor/lib/libwigig_pciaccess.so
-vendor/lib/libwigig_utils.so
-vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/libwigig_flashaccess.so
-vendor/lib64/libwigig_ftm_flows.so
-vendor/lib64/libwigig_pciaccess.so
-vendor/lib64/libwigig_utils.so
-vendor/lib64/vendor.qti.hardware.fstman@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
 
 # Misc
 system_ext/bin/dun-server
@@ -2085,34 +2102,6 @@ system_ext/lib64/libvr_sam_wrapper.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 system_ext/lib64/vendor.qti.hardware.seccam@1.0.so
 system_ext/lib64/vendor.qti.qspmhal@1.0.so
-vendor/bin/hal_proxy_daemon
 vendor/bin/host_manager_11ad
 vendor/bin/hw/capabilityconfigstoretest
-vendor/bin/ks
-vendor/bin/loadalgo
-vendor/bin/mmid
-vendor/bin/mutualex
-vendor/bin/myftm
-vendor/bin/pktlogconf
-vendor/bin/PktRspTest
 vendor/bin/PNX_TAS2557.ftcfg
-vendor/bin/ppd
-vendor/bin/qcc-trd
-vendor/bin/qtigetprop
-vendor/bin/qtisetprop
-vendor/bin/shell_11ad
-vendor/bin/sigma_dut
-vendor/bin/spectraltool
-vendor/bin/ssgqmigd
-vendor/bin/ssgtzd
-vendor/bin/vendor_cmd_tool
-vendor/bin/wdsdaemon
-vendor/lib/libboot_control_qti.so
-vendor/lib/libcvimage_api.so
-vendor/lib/libjnihelper.so
-vendor/lib/libopus.so
-vendor/lib/libspeexresamplercust.so
-vendor/lib64/libboot_control_qti.so
-vendor/lib64/libcvimage_api.so
-vendor/lib64/libjnihelper.so
-vendor/lib64/libreffeature.so
