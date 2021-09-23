@@ -1,2 +1,3 @@
 # Proc
 type proc_bandinfo, proc_type, fs_type;
+type proc_fih, fs_type, proc_type;
