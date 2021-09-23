@@ -1,0 +1,2 @@
+# Proc
+type proc_bandinfo, proc_type, fs_type;
