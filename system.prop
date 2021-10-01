@@ -14,15 +14,15 @@ tunnel.decode=false
 use.voice.path.for.pcm.voip=true
 
 # Bluetooth
+persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+ro.bluetooth.a2dp_offload.supported=true
 ro.bluetooth.library_name=libbluetooth_qti.so
-persist.vendor.btstack.aac_frm_ctl.enabled=true
 
 # Camera
 persist.camera.awbdefine=1
 persist.camera.debug_img_exif=1
 persist.camera.expose.aux=1
-vendor.camera.aux.packagelist=com.fihtdc.fap,com.evenwell.fqc,com.tools.alt,org.codeaurora.snapcam,com.hmdglobal.camera2
-persist.vendor.camera.privapp.list=com.android.cts.verifier,com.hmdglobal.camera2
 persist.camera.ffcolor=ffe66f
 persist.camera.ffcolor.th=3200
 persist.camera.ffcolor.lev3=fff0ac
@@ -60,9 +60,6 @@ ro.com.widevine.cachesize=16777216
 persist.vendor.overlay.izat.optin=rro
 persist.backup.ntpServer=0.pool.ntp.org
 
-# Graphics
-ro.opengles.version=196610
-
 # Hwui
 ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48
@@ -75,10 +72,6 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
-
-# IMS
-persist.vendor.radio.lte_vrte_ltd=1
-telephony.lteOnCdmaDevice=1
 
 # Media
 qcom.hw.aac.encoder=true
@@ -103,9 +96,7 @@ sys.qca1530=detect
 persist.sys.force_sw_gles=1
 ro.kernel.qemu.gles=0
 ro.shutdown.voltage.mv=3350
-persist.sys.pftrace.enabled=true
 ro.opa.device_model_id=camera-880e6-nokia-8.1-rg4bqo
-ro.vendor.qti.va_aosp.support=1
 
 # Navigation
 qemu.hw.mainkeys=0
@@ -128,6 +119,9 @@ ro.vendor.display.cabl=2
 sdm.debug.disable_skip_validate=1
 sdm.perf_hint_window=50
 
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
 # Radio
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.rild.nitz_plmn=
@@ -143,16 +137,13 @@ ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 persist.radio.oem_socket=true
 persist.data.tcp_rst_drop=true
-persist.ims.enableADBLogs=1
-persist.ims.enableDebugLogs=1
 persist.data.iwlan.enable=true
 persist.radio.flexmap_type=nw_mode
-persist.radio.adb_log_on=3
-persist.vendor.radio.custom_ecc=1
 persist.radio.qcom_ext_enable=true
 persist.vendor.radio.oem_socket=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.atfwd.start=true
+telephony.lteOnCdmaDevice=1
 
 # Rmnet data
 persist.rmnet.data.enable=true
@@ -165,9 +156,6 @@ persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
-# Sensors
-persist.vendor.sensors.enable.mag_filter=true
-
 # Time
 persist.timed.enable=true
 
@@ -178,3 +166,4 @@ persist.sys.wfd.virtual=0
 # Wifi
 config.disable_rtt=true
 ro.boot.wificountrycode=US
+wifi.interface=wlan0

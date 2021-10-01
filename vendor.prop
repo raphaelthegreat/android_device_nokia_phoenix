@@ -84,22 +84,22 @@ vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
 
 # Bluetooth
-vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
-ro.bluetooth.a2dp_offload.supported=true
-persist.bluetooth.a2dp_offload.disabled=false
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
-ro.vendor.bluetooth.wipower=false
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 persist.vendor.qcom.bluetooth.scram.enabled=true
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
+ro.vendor.bluetooth.wipower=false
+vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.panorama.quality=high
+persist.vendor.camera.privapp.list=com.android.cts.verifier,com.hmdglobal.camera2
+vendor.camera.aux.packagelist=com.fihtdc.fap,com.evenwell.fqc,com.tools.alt,org.codeaurora.snapcam,com.hmdglobal.camera2
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
@@ -163,14 +163,19 @@ keyguard.no_require_sim=true
 ro.com.android.dataroaming=true
 ro.carrier=unknown
 ro.telephony.iwlan_operation_mode=legacy
-persist.vendor.sensors.firmware_property_read_support=false
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.lte_vrte_ltd=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.radio.multisim.config=dsds
 persist.vendor.radio.rat_on=combine
 ro.telephony.default_network=33,33
+ro.telephony.call_ring.multiple=false
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+persist.vendor.sensors.firmware_property_read_support=false
 
 # USB
 vendor.usb.diag.func.name=diag
