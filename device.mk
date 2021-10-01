@@ -494,5 +494,8 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # Inherit vendor
 $(call inherit-product, vendor/nokia/phoenix/phoenix-vendor.mk)
