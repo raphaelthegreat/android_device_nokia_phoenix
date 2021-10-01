@@ -32,28 +32,24 @@ persist.camera.ffcolor.lev2=fff3ee
 # Charger
 ro.charger.enable_suspend=1
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Data modules
 persist.vendor.data.profile_update=true
 persist.data.tcp_rst_drop=true
-ro.vendor.use_data_netmgrd=true
 persist.vendor.data.mode=concurrent
 
 # Display
+debug.gralloc.enable_fb_ubwc=1
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
+debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 persist.debug.coresight.config=stm-events
+ro.vendor.display.cabl=2
+sdm.debug.disable_skip_validate=1
+sdm.perf_hint_window=50
 
 # DRM
 drm.service.enabled=true
-ro.com.widevine.cachesize=16777216
-
-# GPS
-persist.vendor.overlay.izat.optin=rro
-persist.backup.ntpServer=0.pool.ntp.org
 
 # Hwui
 ro.hwui.texture_cache_size=72
@@ -70,18 +66,8 @@ ro.hwui.text_large_cache_height=1024
 
 # Media
 qcom.hw.aac.encoder=true
-media.stagefright.enable-player=true
-media.stagefright.enable-http=true
-media.stagefright.enable-aac=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-scan=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
-mmp.enable.3g2=true
-media.aac_51_output_enabled=true
-mm.enable.smoothstreaming=true
-vendor.mm.enable.qcom_parser=16777215
-persist.mm.enable.prefetch=true
 debug.stagefright.ccodec=1
 ro.media.recorder-max-base-layer-fps=60
 debug.stagefright.omx_default_rank=0
@@ -96,23 +82,15 @@ ro.opa.device_model_id=camera-880e6-nokia-8.1-rg4bqo
 # Navigation
 qemu.hw.mainkeys=0
 
-# Netflix
-ro.netflix.bsp_rev=Q845-05000-1
-
 # NFC
 ro.nfc.port=I2C
 ro.hardware.nfc_nci=sec
 ro.boot.nfc=sec
 
-# Display
-debug.gralloc.enable_fb_ubwc=1
-debug.sf.enable_hwc_vds=1
-debug.sf.hw=1
-debug.sf.latch_unsignaled=1
-ro.qualcomm.cabl=0
-ro.vendor.display.cabl=2
-sdm.debug.disable_skip_validate=1
-sdm.perf_hint_window=50
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
@@ -149,7 +127,6 @@ persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
 persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
-persist.data.df.dev_name=rmnet_usb0
 
 # Time
 persist.timed.enable=true
@@ -159,6 +136,5 @@ persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
 # Wifi
-config.disable_rtt=true
 ro.boot.wificountrycode=US
 wifi.interface=wlan0
