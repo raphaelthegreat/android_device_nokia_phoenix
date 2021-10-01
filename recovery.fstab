@@ -27,40 +27,17 @@
 
 # A/B recovery.fstab variant.
 
-#device         mount point      fstype        [device2] [length=]
+#device                                    mount point          fstype  [device2] [length=]
+/dev/block/bootdevice/by-name/system       /                    ext4    ro,barrier=1,discard                                                            wait,slotselect,avb
+/dev/block/bootdevice/by-name/vendor       /vendor              ext4    ro,barrier=1                                                                    wait,slotselect,avb
+/dev/block/bootdevice/by-name/boot         /boot                emmc    defaults                                                                        defaults
+/dev/block/bootdevice/by-name/userdata     /data                ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc,discard,lazytime,errors=panic    wait,check,latemount,formattable,fileencryption=ice,quota,reservedsize=128M
+/dev/block/bootdevice/by-name/persist      /persist             ext4    nosuid,noatime,nodev,barrier=1                                                  wait
 
-/dev/block/bootdevice/by-name/system       /               ext4    ro,barrier=1                                                    wait,slotselect,avb
-/dev/block/bootdevice/by-name/vendor       /vendor         ext4    ro,barrier=1                                                    wait,slotselect,avb
-/dev/block/bootdevice/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc,discard          wait,check,fileencryption=ice,formattable,quota
-/dev/block/mmcblk1p1                       /sdcard         vfat    nosuid,nodev                                                    wait
-/dev/block/bootdevice/by-name/boot         /boot           emmc    defaults                                                        defaults
-/dev/block/bootdevice/by-name/misc         /misc           emmc    defaults                                                        defaults
+# Removable storage
+/dev/block/mmcblk1p1                       /external_sd         vfat    nosuid,nodev                                                                    wait
 
-/dev/block/bootdevice/by-name/xbl          /xbl            emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/xbl_config   /xbl_config     emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/tz           /tz             emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/aop          /aop            emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/hyp          /hyp            emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/keymaster    /keymaster      emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/cmnlib       /cmnlib         emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/cmnlib64     /cmnlib64       emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/modem        /firmware       vfat   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/dsp          /dsp            emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/abl          /abl            emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/bluetooth    /bt_firmware    vfat   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/dtbo         /dtbo           emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/persist      /persist        ext4   defaults                                                         defaults
-/dev/block/bootdevice/by-name/devcfg       /devcfg         emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/qupfw        /qupfw          emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/storsec      /storsec        emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/vbmeta       /vbmeta         emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/hidden       /hidden         ext4   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/cda          /cda            ext4   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/systeminfo   /systeminfo     ext4   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/splash       /splash         emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/zplash       /zplash         emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/nvdef        /nvdef          emmc   defaults                                                         wait,slotselect
-/dev/block/bootdevice/by-name/sutinfo      /sutinfo        emmc   defaults                                                         defaults
-/dev/block/bootdevice/by-name/elabel       /elabel         ext4   defaults                                                         defaults
-
-/dev/block/bootdevice/by-name/logfs        /logfs          vfat   defaults                                                         wait
+# Need to have this entry in here even though the mount point itself is no longer needed.
+# The update_engine code looks for this entry in order to determine the boot device address
+# and fails if it does not find it.
+/dev/block/bootdevice/by-name/misc         /misc                emmc    defaults                                                                        defaults
