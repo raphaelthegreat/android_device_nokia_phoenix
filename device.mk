@@ -492,6 +492,7 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
+    libmediaextractorservice \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
