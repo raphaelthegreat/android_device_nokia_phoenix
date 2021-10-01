@@ -99,7 +99,6 @@ ro.media.recorder-max-base-layer-fps=60
 debug.stagefright.omx_default_rank=0
 
 # Misc
-ro.product.property_source_order=odm,vendor,product,system_ext,system
 sys.qca1530=detect
 persist.sys.force_sw_gles=1
 ro.kernel.qemu.gles=0
