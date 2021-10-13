@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/nokia/phoenix
+DEVICE_PATH := device/nokia/PNX_sprout
 BOARD_VENDOR := nokia
 
 # A/B
@@ -160,4 +160,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit from the proprietary version
--include vendor/nokia/phoenix/BoardConfigVendor.mk
+-include vendor/nokia/PNX_sprout/BoardConfigVendor.mk

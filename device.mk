@@ -503,4 +503,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit vendor
-$(call inherit-product, vendor/nokia/phoenix/phoenix-vendor.mk)
+$(call inherit-product, vendor/nokia/PNX_sprout/PNX_sprout-vendor.mk)

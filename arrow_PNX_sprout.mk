@@ -3,14 +3,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from phoenix device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_NAME := lineage_phoenix
-PRODUCT_DEVICE := phoenix
+PRODUCT_NAME := arrow_PNX_sprout
+PRODUCT_DEVICE := PNX_sprout
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
 PRODUCT_MODEL := Nokia 8.1

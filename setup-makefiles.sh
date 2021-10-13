@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=phoenix
+DEVICE=PNX_sprout
 VENDOR=nokia
 
 # Load extract_utils and do some sanity checks
