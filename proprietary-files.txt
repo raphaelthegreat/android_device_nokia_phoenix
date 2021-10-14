@@ -712,6 +712,7 @@ vendor/firmware/wigig/wigig.ini
 # GPS
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
+vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/gnss_antenna_info.conf
