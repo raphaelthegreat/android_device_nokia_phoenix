@@ -99,7 +99,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
-    Bluetooth \
     libbthost_if \
     libbtconfigstore \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -320,6 +319,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.samsung \
     NfcNci \
+    SecureElement \
     Tag \
     com.android.nfc_extras
 
