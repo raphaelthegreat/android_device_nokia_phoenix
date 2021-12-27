@@ -7,3 +7,6 @@
 /dev/esfp0_fp                       u:object_r:fpc_device:s0
 /dev/goodix_fp                      u:object_r:goodix_device:s0
 /data/vendor/gf_data(/.*)?          u:object_r:fingerprint_vendor_data_file:s0
+
+# NFC
+/vendor/bin/hw/android\.hardware\.nfc@1\.2-service\.samsung         u:object_r:hal_nfc_default_exec:s0
