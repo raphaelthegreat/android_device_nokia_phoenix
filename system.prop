@@ -92,6 +92,30 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Perf
+iop.enable_prefetch_ofr=1
+iop.enable_uxe=0
+iorapd.readahead.enable=true
+ro.iorapd.enable=true
+ro.vendor.qti.core_ctl_min_cpu=2
+ro.vendor.qti.core_ctl_max_cpu=4
+
+#UI
+debug.sf.hw=1
+debug.sf.latch_unsignaled=1
+persist.cust.tel.eons=1
+hw3d.force=1
+view.touch_slop=1
+view.scroll_friction=0
+ro.max.fling_velocity=20000
+ro.min.fling_velocity=8000
+ro.fb.mode=1
+ro.config.hw_fast_dormancy=1
+windowsmgr.max_events_per_sec=150
+ro.min_pointer_dur=8 
+persist.sys.scrollingcache=3
+persist.sys.purgeable_assets=
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 

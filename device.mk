@@ -7,6 +7,8 @@
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+include build/make/target/product/iorap_large_memory_config.mk
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -265,6 +267,9 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
+# iorap
+PRODUCT_PACKAGES += iorap-nall
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -493,6 +498,9 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # System Helper
 PRODUCT_PACKAGES += \
