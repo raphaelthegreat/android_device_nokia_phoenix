@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2021 The LineageOS Project
-#
+
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -550,8 +550,8 @@ PRODUCT_PACKAGES += \
     libmediaextractorservice \
     libwfdaac_vendor
 
-#PRODUCT_BOOT_JARS += \
-    WfdCommon
+PRODUCT_BOOT_JARS += \
+    WfdCommon 
 
 # Inherit vendor
 $(call inherit-product, vendor/nokia/PNX_sprout/PNX_sprout-vendor.mk)
