@@ -1,0 +1,2 @@
+type goodix_device, dev_type;
+type fpc_device, dev_type;
