@@ -7,6 +7,10 @@
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -96,11 +100,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0.vendor \
     android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.0 \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     libbthost_if \
-    libbtconfigstore \
+    libldacBT_dec \
+    BluetoothQti \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
@@ -140,7 +147,7 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.capabilityconfigstore@1.0
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
 # Display
 PRODUCT_PACKAGES += \
@@ -154,6 +161,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libgralloc.qti \
     libqdMetaData \
+    libqdMetaData.system \
+    libvulkan \
     libtinyxml \
     vendor.display.config@1.9 \
     vendor.display.config@1.9.vendor \
@@ -191,6 +200,7 @@ PRODUCT_PACKAGES += \
 # Framework detect
 PRODUCT_PACKAGES += \
     libjson \
+    libjson.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -416,6 +426,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.secure_element@1.2.vendor \
+    android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
     CarrierConfigOverlay \
     librmnetctl
@@ -452,6 +463,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.0-service.multihal \
+    android.hardware.sensors@1.0-service \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@2.0.vendor \
     libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
