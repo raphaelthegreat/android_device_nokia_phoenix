@@ -7,9 +7,6 @@
 
 set -e
 
-DEVICE=PNX_sprout
-VENDOR=nokia
-
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -22,6 +19,9 @@ if [ ! -f "$HELPER" ]; then
     exit 1
 fi
 source "${HELPER}"
+
+DEVICE=PNX_sprout
+VENDOR=nokia
 
 # Initialize the helper for common
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true
