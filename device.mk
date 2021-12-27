@@ -601,8 +601,5 @@ PRODUCT_PACKAGES += \
     libmediaextractorservice \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon 
-
 # Inherit vendor
 $(call inherit-product, vendor/nokia/PNX_sprout/PNX_sprout-vendor.mk)
