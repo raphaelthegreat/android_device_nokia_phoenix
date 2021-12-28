@@ -85,7 +85,6 @@ qemu.hw.mainkeys=0
 # NFC
 ro.nfc.port=I2C
 ro.hardware.nfc_nci=sec
-ro.boot.nfc=sec
 
 # IMS
 persist.dbg.volte_avail_ovr=1
