@@ -1,2 +1,6 @@
 allow qti_init_shell vendor_data_file:dir create_dir_perms;
 allow qti_init_shell vendor_data_file:file create_file_perms;
+
+# For configfs permission
+allow qti_init_shell configfs:dir create_dir_perms;
+allow qti_init_shell configfs:file rw_file_perms;
