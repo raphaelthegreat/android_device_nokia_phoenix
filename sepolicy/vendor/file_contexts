@@ -11,5 +11,8 @@
 # NFC
 /vendor/bin/hw/android\.hardware\.nfc@1\.2-service\.samsung                 u:object_r:hal_nfc_default_exec:s0
 
+# Sensors
+/vendor/bin/init\.sensor\.e2pwrite\.sh	                                    u:object_r:sensors_e2p_exec:s0
+
 # Power
 /vendor/bin/hw/android\.hardware\.power-service\.nokia-sdm710-libperfmgr    u:object_r:hal_power_default_exec:s0
