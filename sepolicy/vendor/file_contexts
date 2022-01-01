@@ -1,3 +1,6 @@
+# ADSP
+/sys/firmware/devicetree/base/soc/fih_info/fih-info,baseband                u:object_r:sysfs_fih:s0
+
 # Firmware
 /bt_firmware(/.*)?                              u:object_r:bt_firmware_file:s0
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
